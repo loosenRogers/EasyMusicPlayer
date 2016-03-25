@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>easyMusicPlayer</title>
+	<link rel="stylesheet" type="text/css" href="styles/reset.css">
+	<link rel="stylesheet" type="text/css" href="styles/player.css">
+</head>
+<body>
+	<div class="container">
+		<h1 class="left">华语</h1>
+		<span class="icon left">&#xe605;</span>
+		<br class="cb"> 
+		<div class="palyer clearfix">
+			<div class="music left">
+				<img src="images/singpic_1.jpg" alt="歌曲图片">
+				<h2 class="info">小幸运</h2>
+				<h4 class="info">田馥香</h4>
+				<audio id="player" src="小幸运_原声带.mp3" loop="loop">浏览器不支持该播放器</audio>
+				<div class="control" id="control">
+					<span class="icon">&#xe628;</span>
+					<span class="icon">&#xf0051;</span>
+					<span class="icon">&#xe64f;</span>
+					<span class="icon">&#xf0010;</span>
+				</div>
+				<!-- progressbar 进度条部分 -->
+				<div class="progressbar" id = "progressbar"  style="width: 300px;">
+					<div class="inside">
+					<span></span>
+					</div>
+				</div>
+
+				<div class="left time">
+					<span id = "playtime"></span>
+					<!-- <span class="now info">time</span>/<span id="full">fulltime</span> -->
+				</div>
+				<div class="right subcontrol">
+					<span class="icon">&#xe60d;</span>
+					<div class="sound" id="sound" style="width: 50px;">
+						<div class="inside">
+							<span></span>
+						</div>
+					</div>
+					<span class="icon">&#xf000a;</span>
+					<span class="icon">&#xe602;</span>
+				</div>
+			</div>
+			<div class="lyric right" id="lyric">
+				<ul></ul>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="scripts/player.js"></script>
+</body>
+</html>
